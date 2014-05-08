@@ -39,6 +39,7 @@ weekdays <- strptime(paste(selData$Date, selData$Time), format='%Y-%m-%d %H:%M:%
 selData <- cbind(selData, weekdays)
 
 print("PLOTTING ...")
+png(file = "plot4.png", width = 480, height = 480, units = "px", bg = "transparent")
 
 par(mfrow = c(2, 2), mar = c(4, 4, 1, 1), oma = c(0, 0, 0, 0))
 
@@ -73,5 +74,5 @@ with(selData, plot(weekdays, Global_reactive_power, type="l", col = "black", mai
 ))
 
 print("SAVING PNG ...")
-dev.copy(png, file = "plot4.png", width = 480, height = 480, units = "px", bg = "transparent")
+##dev.copy(png, file = "plot4.png", width = 480, height = 480, units = "px", bg = "transparent")
 dev.off()

@@ -39,11 +39,12 @@ weekdays <- strptime(paste(selData$Date, selData$Time), format='%Y-%m-%d %H:%M:%
 selData <- cbind(selData, weekdays)
 
 print("PLOTTING ...")
+png(file = "plot2.png", width = 480, height = 480, units = "px", bg = "transparent")
 with(selData, plot(weekdays, Global_active_power, type="l", col = "black", main = "",
                   xlab = "",
                   ylab = "Global Active Power (kilowatts)"
                   ))
 
 print("SAVING PNG ...")
-dev.copy(png, file = "plot2.png", width = 480, height = 480, units = "px", bg = "transparent")
+##dev.copy(png, file = "plot2.png", width = 480, height = 480, units = "px", bg = "transparent")
 dev.off()

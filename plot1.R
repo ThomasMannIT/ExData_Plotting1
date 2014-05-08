@@ -35,10 +35,11 @@ sel2Data <- subset(data, Date == "2007-02-02")
 selData <- rbind(sel1Data,sel2Data)
 
 print("PLOTTING ...")
+png(file = "plot1.png", width = 480, height = 480, units = "px", bg = "transparent")
 with(selData, hist(Global_active_power, col = "red", main = "Global Active Power",
                   xlab = "Global Active Power (kilowatts)",
                   ylab = "Frequency"))
 
 print("SAVING PNG ...")
-dev.copy(png, file = "plot1.png", width = 480, height = 480, units = "px", bg = "transparent")
+##dev.copy(png, file = "plot1.png", width = 480, height = 480, units = "px", bg = "transparent")
 dev.off()
