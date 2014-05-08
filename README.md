@@ -1,8 +1,12 @@
 ## MY COMMENTS
 
+ATTENTION MY PNG FILES HAVE A TRANSPARENT BACKGROUND !!!
+
+Dont get Scared of a chessboard like background, this is TRANSPARENCY ;-)
+
 See plot1.PNG plot2.PNG plot3.PNG plot4.PNG
 
-See plot1.R plot2.R plot3.R plot4.R
+See plot1.R plot2.R plot3.R plot4.R for Code
 
 ## TASK
 ## Introduction
